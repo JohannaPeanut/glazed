@@ -1,13 +1,14 @@
 import React from 'react'
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import CustomMailForm from './CustomMailForm';
+import './MailchimpFormContainer.scss';
 
 const MailchimpFormContainer = props => {
 
     const postUrl = process.env.REACT_APP_MAILCHIMP_URI
 
     return (
-        <div className="mc__form-container">
+        <div className="mc-form-container">
             <MailchimpSubscribe 
             url={postUrl}
             render={({ subscribe, status, message }) => (

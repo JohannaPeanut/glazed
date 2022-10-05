@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import './MailchimpFormContainer.scss';
 
 
 const CustomMailForm = ({ status, message, onValidated }) => {
@@ -17,14 +18,16 @@ const CustomMailForm = ({ status, message, onValidated }) => {
     }
 
     return (
-        <form className="mc__form"
+        <form className="mc-form"
         onSubmit={(e) => handleSubmit(e)}>
-        <h3 className="mc__title">{status === "success" 
-            ? "Success!" 
-            : "Join our email list for future updates."
+            <div>
+        <h3 className="mc-title">{status === "success" 
+            ? "Thanks for joining!" 
+            : "Join our free beta:"
           }</h3>
+          </div>
 
-        {status === "sending" && (
+        {/* {status === "sending" && (
             // shown when status is sending / could be replaces by spinner
           <div className="mc__alert mc__alert--sending"> 
           
@@ -44,27 +47,29 @@ const CustomMailForm = ({ status, message, onValidated }) => {
             className="mc__alert mc__alert--success"
             dangerouslySetInnerHTML={{ __html: message }}
           />
-        )}
+        )} */}
 
-        <div className="mc__field-container">
+        <div className="mc-field-container">
           
           <input
-            
+            className="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onSubmit={(e)=> e.target.reset()}
             placeholder="your@email.com"
             //isRequired
+            
           />
-
-        </div>
-
-        <input
+            <input
                 className='btn'
                 type='submit'
-                value="Submit"
+                value="join"
                 //disabled={validateInput(props.formValues)}
             />
+        </div>
+
+       
       </form>
     )
 };

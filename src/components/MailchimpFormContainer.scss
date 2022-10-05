@@ -1,0 +1,53 @@
+@use '../styles/config/typography';
+@use '../styles/config/colors';
+
+.mc-form-container {
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1;
+    width: 20rem;
+    
+    padding: 1rem 1.5rem;
+    border-radius: 33px;
+    background-color: colors.$purple;
+    color: white;
+    .mc-form{
+        
+        display: flex;
+        flex-direction: column;
+        h3 {
+            text-align: left;
+            font-size:  typography.$h3;
+            line-height: typography.$line-height-single;
+        }
+        .mc-field-container{
+            height: 44px;
+            margin-top: 0.5rem;
+            display: flex;
+            input{
+                border: solid white 1px;
+                border-radius: 33px;
+                font-size: 1rem;
+            }
+            ::placeholder {
+                color:white;
+                
+            }
+            .email {
+                flex-grow: 1;
+                color: white;;
+                background-color: colors.$purple;
+                padding-left: 1rem;
+            }
+            .btn {
+                margin-left: 0.5rem;
+                background-color: white;
+                color: colors.$purple;
+                width: 60px;
+            }
+        }
+        
+}
+}
