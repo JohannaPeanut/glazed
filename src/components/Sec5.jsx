@@ -19,6 +19,20 @@ const Sec5 = () => {
             </p>
           </div>
         </div>
+
+        <div className="diagram">
+          <div>
+            <img src="/cloud-provider.png" alt="" />
+            <p>lorem</p>
+          </div>
+          <img src="/arrow-2.png" alt="" />
+          <img src="/glazed-in-box.png" alt="" />
+          <img src="/arrow-2.png" alt="" />
+          <div>
+            <img src="/event-collector.png" alt="" />
+            <p>lorem</p>
+          </div>
+        </div>
       </section>
     </div>
   );
