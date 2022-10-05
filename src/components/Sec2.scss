@@ -1,0 +1,6 @@
+@use '../styles/config/colors';
+
+.Sec2 section {
+  height: 100vh;
+  background-color: colors.$background-second;
+}

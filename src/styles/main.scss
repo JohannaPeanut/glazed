@@ -1,0 +1,14 @@
+@use './base/reset';
+@use './config/colors';
+@use './config/typography';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: colors.$background;
+  font-family: typography.$text;
+  font-size: 16px;
+}
