@@ -1,6 +1,41 @@
 @use '../styles/config/colors';
+@use '../styles/config/typography';
 
 .Sec4 section {
   height: 100vh;
   background-color: colors.$background-second;
+
+  .section-header {
+    float: left;
+    box-shadow: 1rem 1.5rem #ffde74;
+    width: 400px;
+    align-self: center;
+  }
+
+  .section-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8rem 20rem 0 20rem;
+  }
+
+  p {
+    font-size: typography.$p;
+    text-align: left;
+    padding: 5rem;
+  }
+
+  h1 {
+    font-size: typography.$h1;
+    font-weight: 650;
+    line-height: 100%;
+    text-align: left;
+  }
+  .diagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vs {
+    width: 10rem;
+  }
 }

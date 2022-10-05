@@ -11,4 +11,16 @@ body {
   background-color: colors.$background;
   font-family: typography.$text;
   font-size: 16px;
+  color: colors.$text;
+}
+
+.text-box {
+  background-color: colors.$rose;
+  padding: 4rem;
+  border-radius: 33px;
+  box-shadow: 1rem 1.5rem colors.$dark-rose;
+}
+
+strong {
+  font-weight: 650;
 }

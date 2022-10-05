@@ -1,3 +1,30 @@
+@use '../styles/config/colors';
+@use '../styles/config/typography';
+
 .Sec5 section {
   height: 100vh;
+
+  .section-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8rem 20rem 0 20rem;
+  }
+  h1 {
+    font-size: typography.$h1;
+    font-weight: 650;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  p {
+    font-size: typography.$p;
+    text-align: left;
+    padding: 4rem;
+  }
+  .section-header {
+    float: left;
+    box-shadow: 1rem 1.5rem #ff5d77;
+    width: 400px;
+    align-self: center;
+  }
 }

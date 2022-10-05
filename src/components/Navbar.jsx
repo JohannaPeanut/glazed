@@ -9,6 +9,7 @@ const Navbar = () => {
       <a href="#Sec4">Section4</a>
       <a href="#Sec5">Section5</a>
       <a href="#Sec6">Section6</a>
+      {/* Mailchimp Component */}
     </div>
   );
 };
