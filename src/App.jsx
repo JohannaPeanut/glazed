@@ -1,4 +1,5 @@
 import './App.css';
+import MailchimpFormContainer from './components/MailchimpFormContainer';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Sec1 from './components/Sec1';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <MailchimpFormContainer/>
       <Sec1 />
       <Sec2 />
       <Sec3 />
