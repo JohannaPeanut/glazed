@@ -37,6 +37,7 @@ strong {
 section {
   height: fit-content;
   min-height: 100vh;
+  
 }
 
 .vs {
@@ -47,3 +48,11 @@ section {
   padding: 100px ;
 }
 
+p {
+  max-width: 600px;
+}
+
+.section-container{
+  width: 80vw;
+  max-width: 1200px
+}

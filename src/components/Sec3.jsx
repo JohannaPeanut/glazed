@@ -4,7 +4,7 @@ import './Sec3.scss';
 const Sec3 = () => {
   return (
     <div className="Sec3 section-padding" id="Democratise-data">
-      <section>
+      <section className="section-container">
         <div className="section-intro">
           <div className="container">  
             <div className="text-box section-header">
