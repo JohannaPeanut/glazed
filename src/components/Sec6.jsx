@@ -5,9 +5,9 @@ const Sec6 = () => {
   return (
     <div className="Sec6" id="Sec6">
       <section>
-        <div className="container">
-          <div className="vision-wrapper">
-            <h1>Our vision</h1>
+        <div className="vision-container">
+          <div className="ul-wrapper">
+            <h1>Our vision:</h1>
             <ul>
               <li>
                 <img src="Single-truth.png" alt="" />
