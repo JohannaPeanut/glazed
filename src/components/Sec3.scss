@@ -1,50 +1,61 @@
 @use '../styles/config/colors';
 @use '../styles/config/typography';
 
-.Sec3 section {
-  height: 100vh;
 
+.Sec3 {
+  display: flex;
+
+  section{
+    display: flex;
+  flex-direction: column;
+    margin: auto auto
+  }
   .section-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    margin: 8rem 20rem 0 20rem;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // margin: 8rem 20rem 0 20rem;
+    display: flex;
   }
 
   p {
     font-size: typography.$p;
-    text-align: left;
+    max-width: 600PX;
+    margin-left: 4rem;
     padding: 4rem;
+  }
+
+  .container {
+    
   }
 
   .section-header {
     box-shadow: 1rem 1.5rem #7c73e9;
-    width: 30rem;
-    align-self: center;
+    width: 470px;
+    margin-bottom: 4rem;
+    //align-self: center;
   }
 
   h1 {
     font-size: typography.$h1;
-    font-weight: 650;
     line-height: 100%;
-    text-align: left;
+    
   }
   .diagram-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: auto 0;
   }
   .diagram {
-    margin: 3rem 1rem 3rem 4rem;
+    //margin: 3rem 1rem 3rem 4rem;
     img {
-      width: 70%;
-      float: left;
-      padding-left: 16rem;
+      //width: 70%;
+     height: 9rem;
+      //padding-left: 16rem;
     }
   }
 
   .vs {
-    width: 10rem;
-    margin: 0.5rem 0 0.5rem 21vw;
+    margin: 1rem auto 1rem 9rem;
   }
 }

@@ -8,11 +8,15 @@ const Sec1 = () => {
         <div className="main-logo">
           <img src="/Logo.png" alt="" />
         </div>
+        <div>
+
         <div className="claim text-box">
           <h2>The analytics platform build on top of your UI designs.</h2>
         </div>
+
+        </div>
         <div className="call-to-action">
-          <h1>Become design-driven with 2 clicks:</h1>
+          <h1>Become<br/>design-driven<br/>with 2 clicks:</h1>
           <svg
             width="61"
             height="63"

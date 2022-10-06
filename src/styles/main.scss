@@ -11,10 +11,15 @@ body {
   height: 100%;
 }
 
+h1, h2, h3 {
+  font-weight: 650;
+}
+
 body {
   background-color: colors.$background;
   font-family: typography.$text;
   font-size: 16px;
+  font-weight: 400;
   color: colors.$text;
 }
 
@@ -28,3 +33,17 @@ body {
 strong {
   font-weight: 650;
 }
+
+section {
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.vs {
+  width: 5rem;
+}
+
+.section-padding{
+  padding: 100px ;
+}
+

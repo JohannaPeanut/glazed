@@ -8,13 +8,13 @@ const Navbar = () => {
         <img src="/Doughnuts/doughnut_1f369.png" alt="" />
         <p>Top</p>
       </a>
-      <a href="#Democratise-data">
-        <img src="/Doughnuts/doughnut_1f369_11.png" alt="" />
-        <p>Democratise data</p>
-        </a>
       <a href="#Design-driven">
-        <img src="/Doughnuts/doughnut_1f369_7.png" alt="" />
+        <img src="/Doughnuts/doughnut_1f369_11.png" alt="" />
         <p>Design-driven</p>
+        </a>
+      <a href="#Democratise-data">
+        <img src="/Doughnuts/doughnut_1f369_7.png" alt="" />
+        <p>Democratise data</p>
         </a>
       <a href="#Centralise-tracking">
         <img src="/Doughnuts/doughnut_1f369_9.png" alt="" />

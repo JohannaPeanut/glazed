@@ -4,7 +4,7 @@ import './Sec4.scss';
 const Sec4 = () => {
   return (
     <div className="Sec4" id="Centralise-tracking">
-      <section>
+      <section className="section-padding">
         <div className="section-intro">
           <div className="">
             <p>

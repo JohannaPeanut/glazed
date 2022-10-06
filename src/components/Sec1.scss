@@ -3,7 +3,8 @@
 
 .Sec1 {
   section {
-    height: 100vh;
+    padding-top: 5rem;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,14 +12,26 @@
   }
 
   .main-logo {
+    display: flex;
+    margin-bottom: 2rem;;
     img {
       width: 250px;
+      margin: 0 auto;
     }
+  }
+  .container{
+    margin-top: 2rem;
+  }
+  .claim{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .call-to-action {
     width: 500px;
-    text-align: left;
-    margin: 4rem 20%;
+    align-self: center;
+    margin: 2rem 0 2rem -20vw;
   }
   h2 {
     font-size: typography.$h2;

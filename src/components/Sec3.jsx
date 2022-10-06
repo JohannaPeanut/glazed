@@ -3,11 +3,13 @@ import './Sec3.scss';
 
 const Sec3 = () => {
   return (
-    <div className="Sec3" id="Design-driven">
+    <div className="Sec3 section-padding" id="Democratise-data">
       <section>
         <div className="section-intro">
-          <div className="text-box section-header">
-            <h1>Democratise Your Data</h1>
+          <div className="container">  
+            <div className="text-box section-header">
+              <h1>Democratise Your Data</h1>
+            </div>
           </div>
           <div className="paragraph">
             <p>

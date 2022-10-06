@@ -4,7 +4,7 @@ import './Sec5.scss';
 const Sec5 = () => {
   return (
     <div className="Sec5" id="Own-your-data">
-      <section>
+      <section className="section-padding">
         <div className="section-intro">
           <div className="text-box section-header">
             <h1>Own your data 100%</h1>

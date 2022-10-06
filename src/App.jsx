@@ -1,4 +1,4 @@
-import './App.css';
+
 import MailchimpFormContainer from './components/MailchimpFormContainer';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
