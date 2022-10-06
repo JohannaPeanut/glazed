@@ -15,6 +15,7 @@ const CustomMailForm = ({ status, message, onValidated }) => {
         onValidated({
             EMAIL: email
         });
+        setEmail('')
     }
 
     return (

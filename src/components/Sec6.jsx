@@ -3,7 +3,7 @@ import './Sec6.scss';
 
 const Sec6 = () => {
   return (
-    <div className="Sec6" id="Sec6">
+    <div className="Sec6" id="Our-vision">
       <section>
         <div className="vision-container">
           <div className="ul-wrapper">

@@ -3,7 +3,7 @@ import './Sec5.scss';
 
 const Sec5 = () => {
   return (
-    <div className="Sec5" id="Sec5">
+    <div className="Sec5" id="Own-your-data">
       <section>
         <div className="section-intro">
           <div className="text-box section-header">

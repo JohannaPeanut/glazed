@@ -3,7 +3,7 @@ import './Sec2.scss';
 
 const Sec2 = () => {
   return (
-    <div className="Sec2" id="Sec2">
+    <div className="Sec2" id="Democratise-data">
       <section>
         <div className="wireframe">
           <img src="/wireframe01.png" alt="" />
