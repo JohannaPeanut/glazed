@@ -1,0 +1,22 @@
+@use '../styles/config/typography';
+@use '../styles/config/colors';
+
+.footer{
+    color: colors.$text-on-background-high;
+    background-color: colors.$background-footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem;
+    h6{
+        font-weight: 400;
+        font-size: typography.$nav;
+    }
+    .mountain{
+        width: 500px;
+        margin-bottom: 0.3rem;;
+    }
+    .logo-white{
+        width: 130px;
+    }
+}

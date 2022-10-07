@@ -3,7 +3,7 @@ import './Sec5.scss';
 
 const Sec5 = () => {
   return (
-    <div className="Sec5" id="Own-your-data">
+    <div className="Sec5 sec" id="Own-your-data">
       <section className="section-padding">
         <div className="section-intro">
           <div className="text-box section-header">
@@ -21,16 +21,18 @@ const Sec5 = () => {
         </div>
 
         <div className="diagram">
-          <div>
-            <img src="/cloud-provider.png" alt="" />
-            <p>lorem</p>
+          <div className="diagram-cloud-provider">
+            <img className="diagram-side" src="/cloud-provider.png" alt="" />
+            <p>Your cloud provider</p>
           </div>
-          <img src="/arrow-2.png" alt="" />
-          <img src="/glazed-in-box.png" alt="" />
-          <img src="/arrow-2.png" alt="" />
+          <div  className="diagram-center">
+            <img src="/arrow-2.png" alt="" />
+            <img className="glazed-do" src="/glazed-in-box.png" alt="" />
+            <img src="/arrow-2.png" alt="" />
+          </div>
           <div>
-            <img src="/event-collector.png" alt="" />
-            <p>lorem</p>
+            <img className="diagram-side" src="/event-collector.png" alt="" />
+            <p>Your event collector</p>
           </div>
         </div>
       </section>

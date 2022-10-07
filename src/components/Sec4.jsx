@@ -3,7 +3,7 @@ import './Sec4.scss';
 
 const Sec4 = () => {
   return (
-    <div className="Sec4 section-padding" id="Centralise-tracking">
+    <div className="Sec4 sec section-padding" id="Centralise-tracking">
       <section className="section-container">
         <div className="section-intro">
           <div className="">

@@ -11,25 +11,38 @@
   }
   h1 {
     font-size: typography.$h1;
-    font-weight: 650;
-    line-height: 100%;
-    text-align: left;
   }
 
   p {
     font-size: typography.$p;
-    text-align: left;
     padding: 4rem;
   }
   .section-header {
-    float: left;
+   // float: left;
     box-shadow: 1rem 1.5rem #ff5d77;
-    width: 400px;
+    width: 460px;
     align-self: center;
   }
   .diagram {
     display: flex;
     justify-content: center;
     align-items: center;
+    .diagram-cloud-provider {
+      text-align: right;
+    }
+    .diagram-center{
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    .glazed-do{
+      margin: 0 2rem 0 2rem;
+    }
+    .diagram-side{
+      margin: 2rem
+    }
+    p {
+      padding: 0;
+    }
   }
 }

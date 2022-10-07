@@ -1,27 +1,30 @@
 @use '../styles/config/colors';
 @use '../styles/config/typography';
 
-.Sec6 section {
+.Sec6 {
 
   background-color: colors.$background-second;
-  padding: 7rem;
+  //padding: 7rem;
 
   .vision-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    .ul-wrapper {
+      flex-grow: 1;
+      max-width: 700px;
+    }
     ul {
       li {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        margin-right: 5rem;
+        margin-bottom: 2rem;
       }
       img {
-        width: 80px;
-        margin: 1rem 1.2rem;
+        width: 60px;
+        margin: 1rem 1.5rem;
       }
       small {
         font-size: typography.$small;
@@ -32,18 +35,21 @@
       }
     }
   }
-
+  .paragraph{
+    margin-left: 4rem;
+    width: 400px;
+    flex-grow: 0;
+    p {
+      //margin-top: 16rem;
+      font-size: typography.$p;
+    }
+  }
+  
   h1 {
     font-size: 3rem;
     font-weight: 650;
-    line-height: 100%;
-    text-align: left;
     margin: 0 0 2rem 2rem;
   }
 
-  .paragraph p {
-    font-size: typography.$p;
-    text-align: left;
-    width: 40vw;
-  }
+  
 }
