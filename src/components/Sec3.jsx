@@ -5,7 +5,7 @@ const Sec3 = () => {
   return (
     <div className="Sec3 sec section-padding" id="Democratise-data">
       <section className="section-container">
-        <div className="section-intro">
+        <div className="section-intro change-flex-dir">
           <div className="container">  
             <div className="text-box section-header">
               <h1>Democratise Your Data</h1>
@@ -22,7 +22,8 @@ const Sec3 = () => {
         </div>
         <div className="diagram-wrapper">
           <div className="diagram old">
-            <img src="/Emoji-diagram-01.png" alt="" />
+            <img className='process-desk' src="/Emoji-diagram-01.png" alt="" />
+            <img className='process-mobile' src="/mobile-process.png" alt="" />
           </div>
           <div>
             <img className="vs" src="/VS.png" alt="" />

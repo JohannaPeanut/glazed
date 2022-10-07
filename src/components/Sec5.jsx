@@ -5,7 +5,7 @@ const Sec5 = () => {
   return (
     <div className="Sec5 sec section-padding" id="Own-your-data">
       <section className="">
-        <div className="section-intro">
+        <div className="section-intro change-flex-dir">
           <div className="text-box section-header">
             <h1>Own your data 100%</h1>
           </div>

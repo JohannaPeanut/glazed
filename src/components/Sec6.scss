@@ -32,6 +32,9 @@
         padding: 2rem;
         background-color: #7c73e9;
         border-radius: 13px;
+        @media (max-width: 900px) {
+          font-size: typography.$small-m;
+        }
       }
     }
   }
@@ -39,10 +42,6 @@
     margin-left: 4rem;
     width: 400px;
     flex-grow: 0;
-    p {
-      //margin-top: 16rem;
-      font-size: typography.$p;
-    }
   }
   
   h1 {

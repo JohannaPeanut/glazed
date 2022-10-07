@@ -4,7 +4,7 @@ import './Sec2.scss';
 const Sec2 = () => {
   return (
     <div className="Sec2 sec" id="Design-driven">
-      <section>
+      <section className="change-flex-dir">
         <div className="wireframe">
           <img src="/wireframe01.png" alt="" />
           <p>

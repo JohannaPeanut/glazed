@@ -5,7 +5,7 @@ const Sec4 = () => {
   return (
     <div className="Sec4 sec section-padding" id="Centralise-tracking">
       <section className="section-container">
-        <div className="section-intro">
+        <div className="section-intro change-flex-dir">
           <div className="">
             <p>
               A <strong>single source of truth</strong> for your team: product
@@ -21,10 +21,10 @@ const Sec4 = () => {
         </div>
         <div className='sec4-digram-wrapper'>
           
-        <div className="diagram">
-          <img src="/other-apps-in-box.png" alt="" />
+        <div className="diagram change-flex-dir ">
+          <img className="other-apps-img" src="/other-apps-in-box.png" alt="" />
           <img className="vs" src="/VS.png" alt="" />
-          <img src="/glazed-in-box.png" alt="" />
+          <img className="glazed-img"  src="/glazed-in-box.png" alt="" />
         </div>
         </div>
       </section>

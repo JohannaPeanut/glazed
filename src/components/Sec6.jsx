@@ -5,7 +5,7 @@ const Sec6 = () => {
   return (
     <div className="Sec6 sec" id="Our-vision">
       <section className="section-padding">
-        <div className="vision-container">
+        <div className="vision-container change-flex-dir">
           <div className="ul-wrapper">
             <h1>Our vision:</h1>
             <ul>

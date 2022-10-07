@@ -24,23 +24,36 @@
       box-shadow: 1rem 1.5rem #ffde74;
       width: 400px;
       align-self: center;
+      @media (max-width: 900px) {
+        width: 300px;
+        margin: 0;
+      }
     }
   }
 
   p {
-    font-size: typography.$p;
     max-width: 500px;
   }
 
-  h1 {
-    font-size: typography.$h1;
-    font-weight: 650;
-    text-align: left;
-  }
   .sec4-digram-wrapper {
     display: flex;
   }
+
   .diagram {
+    @media (max-width: 900px) {
+      width: 80vw;
+    }
+    .other-apps-img {
+      @media (max-width: 900px) {
+        width: 80vw;
+      }
+    }
+    .glazed-img{
+      @media (max-width: 900px) {
+        width: 70px;
+      }
+    }
+
     margin-top: 7rem;;
     display: flex;
     align-items: center;

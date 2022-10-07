@@ -4,6 +4,10 @@
 .Sec2 {
   padding-top: 100px ;
   padding-bottom: 100px;
+  @media (max-width: 900px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+  }
   background-color: colors.$background-second;
   section {
     
@@ -13,13 +17,15 @@
   }
   .wireframe {
     width: 40vw;
+    @media (max-width: 900px) {
+      width: 80vw;
+    }
     img {
       width: 40vw;
       margin-bottom: 2.4rem;
-    }
-
-    p {
-      font-size: typography.$p;
+      @media (max-width: 900px) {
+        width: 80vw;
+      }
     }
   }
 }

@@ -15,8 +15,32 @@ h1, h2, h3 {
   font-weight: 650;
 }
 
+$small: 1.5rem;
+
 h1 {
   line-height: 120%;
+  font-weight: 650;
+  font-size: typography.$h1;
+  @media (max-width: 900px) {
+    font-size: typography.$h1-m;
+  }
+}
+
+h2 {
+  font-size: typography.$h2;
+  font-weight: 500;
+  @media (max-width: 900px) {
+    font-size: typography.$h2-m;
+  }
+}
+
+h3 {
+  font-size:  typography.$h3;
+  font-weight: 650;
+  line-height: typography.$line-height-single;
+  @media (max-width: 900px) {
+    font-size: typography.$h3-m;
+  }
 }
 
 body {
@@ -25,6 +49,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: colors.$text;
+}
+
+p {
+  max-width: 600px;
+  font-size:  typography.$p;
+  @media (max-width: 900px) {
+    font-size: typography.$p-m;
+    max-width: 80vw;
+  }
 }
 
 .text-box {
@@ -50,13 +83,18 @@ strong {
 
 .section-padding{
   padding: 100px ;
-}
-
-p {
-  max-width: 600px;
+  @media (max-width: 900px) {
+    padding: 1rem;
+  }
 }
 
 .section-container{
   width: 80vw;
   max-width: 1200px
+}
+
+.change-flex-dir {
+  @media (max-width: 900px) {
+  flex-direction: column;
+  }
 }

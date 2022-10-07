@@ -18,39 +18,64 @@
   }
 
   p {
-    font-size: typography.$p;
     margin-left: 4rem;
     padding: 4rem;
+
+    @media (max-width: 900px) {
+      margin-left: 0;
+      padding: 2rem 0;
+      }
   }
 
   .section-header {
     box-shadow: 1rem 1.5rem #7c73e9;
     width: 470px;
     margin-bottom: 4rem;
+    @media (max-width: 900px) {
+      width: 300px;
+      margin-bottom: 1rem;
+      }
     //align-self: center;
   }
 
-  h1 {
-    font-size: typography.$h1; 
-  }
   .diagram-wrapper {
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: auto 0;
+    @media (max-width: 901px) {
+      align-items: center;
+    }
   }
   .diagram {
    
     //margin: 3rem 1rem 3rem 4rem;
     img {
-      //width: 70%;
      height: 9rem;
       //padding-left: 16rem;
+      @media (max-width: 900px) {
+        width: 280px;
+        height: 70%
+      }
+    }
+    .process-desk {
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .process-mobile {
+      @media (min-width: 901px) {
+        display: none;
+      }
     }
   }
 
   .vs {
     margin: 1rem auto 1rem 9rem;
+    @media (max-width: 901px) {
+      margin: 1rem auto;
+    }
   }
 }
