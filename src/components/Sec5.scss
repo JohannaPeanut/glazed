@@ -1,13 +1,20 @@
 @use '../styles/config/colors';
 @use '../styles/config/typography';
 
-.Sec5 section {
-
-
+.Sec5 {
+  display: flex;
+  flex-direction: column;
+  section {
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .section-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 8rem 20rem 0 20rem;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // margin: 8rem 20rem 0 20rem;
+    display: flex;
   }
   h1 {
     font-size: typography.$h1;
@@ -23,12 +30,18 @@
     width: 460px;
     align-self: center;
   }
+  .sec5-digram-wrapper {
+    display: flex;
+  }
   .diagram {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
     .diagram-cloud-provider {
-      text-align: right;
+      
+      display: flex;
+      flex-direction: column;
     }
     .diagram-center{
       display: flex;
@@ -39,9 +52,10 @@
       margin: 0 2rem 0 2rem;
     }
     .diagram-side{
-      margin: 2rem
+      margin: auto auto;
     }
     p {
+      margin-top: 2rem;
       padding: 0;
     }
   }

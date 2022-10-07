@@ -19,11 +19,13 @@ const Sec4 = () => {
             <h1>Centralise Tracking</h1>
           </div>
         </div>
-
+        <div className='sec4-digram-wrapper'>
+          
         <div className="diagram">
           <img src="/other-apps-in-box.png" alt="" />
           <img className="vs" src="/VS.png" alt="" />
           <img src="/glazed-in-box.png" alt="" />
+        </div>
         </div>
       </section>
     </div>

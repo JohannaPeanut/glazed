@@ -23,10 +23,6 @@
     padding: 4rem;
   }
 
-  .container {
-    
-  }
-
   .section-header {
     box-shadow: 1rem 1.5rem #7c73e9;
     width: 470px;
@@ -38,12 +34,14 @@
     font-size: typography.$h1; 
   }
   .diagram-wrapper {
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: auto 0;
   }
   .diagram {
+   
     //margin: 3rem 1rem 3rem 4rem;
     img {
       //width: 70%;
