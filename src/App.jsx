@@ -8,6 +8,7 @@ import Sec3 from './components/Sec3';
 import Sec4 from './components/Sec4';
 import Sec5 from './components/Sec5';
 import Sec6 from './components/Sec6';
+import Scrollbar from './components/Scrollbar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="desktop">
         <MailchimpFormContainer />
       </div>
+      <Scrollbar />
       <Sec1 />
       <Sec2 />
       <Sec3 />

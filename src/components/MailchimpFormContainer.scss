@@ -19,7 +19,7 @@
         color: colors.$text;
         background-color: colors.$background;
       }
-      
+   
     .mc-form{
         
         display: flex;
@@ -49,6 +49,12 @@
                 @media (max-width: 900px) {
                     border: solid colors.$text 1px;
                     background-color: colors.$text-on-background-high;
+                    color: colors.$text;
+                  }
+            }
+            a { 
+                color: white;
+                @media (max-width: 900px) {
                     color: colors.$text;
                   }
             }
