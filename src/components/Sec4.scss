@@ -33,6 +33,10 @@
 
   p {
     max-width: 500px;
+    @media (max-width: 900px) {
+      margin-left: 0;
+      padding: 4rem 0 2rem 0;
+      }
   }
 
   .sec4-digram-wrapper {
@@ -54,7 +58,10 @@
       }
     }
 
-    margin-top: 7rem;;
+    margin-top: 7rem;
+    @media (max-width: 900px) {
+      margin-top: 2rem;
+    }
     display: flex;
     align-items: center;
     justify-content: center;

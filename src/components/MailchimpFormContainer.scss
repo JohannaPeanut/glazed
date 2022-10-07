@@ -8,11 +8,18 @@
     right: 2rem;
     z-index: 3;
     width: 20rem;
-    
     padding: 1rem 1.5rem;
     border-radius: 33px;
     background-color: colors.$purple;
     color: white;
+
+    @media (max-width: 900px) {
+        text-align: left;
+        position: static;
+        color: colors.$text;
+        background-color: colors.$background;
+      }
+      
     .mc-form{
         
         display: flex;
@@ -28,20 +35,32 @@
                 font-size: 1rem;
             }
             ::placeholder {
-                color:white;
-                
+                color: colors.$background;
+                @media (max-width: 900px) {
+                    color: colors.$text;
+                  }
+                  
             }
             .email {
                 flex-grow: 1;
                 color: white;;
                 background-color: colors.$purple;
                 padding-left: 1rem;
+                @media (max-width: 900px) {
+                    border: solid colors.$text 1px;
+                    background-color: colors.$text-on-background-high;
+                    color: colors.$text;
+                  }
             }
             .btn {
                 margin-left: 0.5rem;
                 background-color: white;
                 color: colors.$purple;
                 width: 60px;
+                @media (max-width: 900px) {
+                    color: colors.$text-on-background-high;
+                    background-color: colors.$text;
+                  }
             }
         }
         

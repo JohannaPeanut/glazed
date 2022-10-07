@@ -24,6 +24,7 @@ const Navbar = () => {
       <div className="Navbar">
         <a href="#Top">
           <img src="/Doughnuts/doughnut_1f369.png" alt="" />
+          <p>Top</p>
         </a>
         <a href="#Design-driven">
           <img src="/Doughnuts/doughnut_1f369_11.png" alt="" />

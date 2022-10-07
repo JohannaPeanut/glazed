@@ -21,10 +21,18 @@
         align-items: center;
         justify-content: flex-start;
         margin-bottom: 2rem;
+        @media (max-width: 900px) {
+          margin-bottom: 1rem;
+        }
+
       }
       img {
         width: 60px;
         margin: 1rem 1.5rem;
+        @media (max-width: 900px) {
+          width: 40px;
+          margin: 0 1rem 0 0;
+        }
       }
       small {
         font-size: typography.$small;
@@ -34,6 +42,7 @@
         border-radius: 13px;
         @media (max-width: 900px) {
           font-size: typography.$small-m;
+          padding: 1rem;
         }
       }
     }
@@ -42,6 +51,12 @@
     margin-left: 4rem;
     width: 400px;
     flex-grow: 0;
+    @media (max-width: 900px) {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      width: 80vw;
+      margin-left:0
+    }
   }
   
   h1 {

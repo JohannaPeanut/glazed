@@ -13,7 +13,7 @@
     flex-direction: column;
     //position: relative;
     margin: auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-logo {
@@ -24,12 +24,18 @@
       margin: 0 auto;
       @media (max-width: 900px) {
         width:150px;
+        margin-top: 2rem;
       }
     }
   }
   .container{
     margin-top: 2rem;
   }
+
+.mobile{
+  margin-top: 4rem
+}
+
   .claim{
     width: 650px;
     padding-top: 2rem;
@@ -43,6 +49,9 @@
     //width: 500px;
     align-self: center;
     margin: 4rem 0 2rem -20vw;
+    @media (max-width: 900px) {
+      margin: 2rem 0 2rem -20vw;
+    }
   }
  
 }

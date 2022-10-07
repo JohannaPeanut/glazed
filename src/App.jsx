@@ -13,7 +13,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <MailchimpFormContainer/>
+      <div className="desktop">
+        <MailchimpFormContainer />
+      </div>
       <Sec1 />
       <Sec2 />
       <Sec3 />

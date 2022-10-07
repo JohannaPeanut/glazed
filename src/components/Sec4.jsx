@@ -6,7 +6,7 @@ const Sec4 = () => {
     <div className="Sec4 sec section-padding" id="Centralise-tracking">
       <section className="section-container">
         <div className="section-intro change-flex-dir">
-          <div className="">
+          <div className="desktop">
             <p>
               A <strong>single source of truth</strong> for your team: product
               managers, designers, developers, QA, onboardings...
@@ -15,9 +15,21 @@ const Sec4 = () => {
               <strong>No complicated spreadsheets!</strong>
             </p>
           </div>
+
           <div className="text-box section-header">
             <h1>Centralise Tracking</h1>
           </div>
+
+          <div className="mobile">
+            <p>
+              A <strong>single source of truth</strong> for your team: product
+              managers, designers, developers, QA, onboardings...
+              <br />
+              <br />
+              <strong>No complicated spreadsheets!</strong>
+            </p>
+          </div>
+
         </div>
         <div className='sec4-digram-wrapper'>
           

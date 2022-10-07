@@ -19,6 +19,7 @@
         font-size: typography.$nav;
        
     }
+
     .mountain{
         width: 500px;
         margin-bottom: 0.3rem;
@@ -26,7 +27,20 @@
             width: 80vw;
           }
     }
-    .logo-white{
-        width: 130px;
+
+    .footer-bottom-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .do-img{
+            width: 80px;
+        }
+        .logo-white{
+            margin-top: 1rem;;
+            width: 130px;
+        }
+        h6{
+            margin-top: 1rem;;
+        }
     }
 }

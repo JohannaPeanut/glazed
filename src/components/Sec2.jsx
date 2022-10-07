@@ -13,7 +13,7 @@ const Sec2 = () => {
           </p>
         </div>
         <div className="wireframe">
-          <img src="/wireframe02.png" alt="" />
+          <img className="wireframe-2-img" src="/wireframe02.png" alt="" />
           <p>
             Click on the screen or event of interest to load the analytics from
             your data warehouse.

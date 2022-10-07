@@ -1,4 +1,5 @@
 import React from 'react';
+import MailchimpFormContainer from './MailchimpFormContainer';
 import './Sec1.scss';
 
 const Sec1 = () => {
@@ -13,7 +14,10 @@ const Sec1 = () => {
         <div className="claim text-box">
           <h2>The analytics platform build on top of your UI designs.</h2>
         </div>
-
+        
+        </div>
+        <div className="mobile">
+          <MailchimpFormContainer />
         </div>
         <div className="call-to-action">
           <h1>Become<br/>design-driven<br/>with 2 clicks:</h1>
