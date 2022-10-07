@@ -8,13 +8,23 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 2rem;
+    @media (max-width: 900px) {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
     h6{
         font-weight: 400;
         font-size: typography.$nav;
+       
     }
     .mountain{
         width: 500px;
-        margin-bottom: 0.3rem;;
+        margin-bottom: 0.3rem;
+        @media (max-width: 900px) {
+            width: 80vw;
+          }
     }
     .logo-white{
         width: 130px;

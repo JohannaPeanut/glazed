@@ -20,7 +20,7 @@ const Sec5 = () => {
           </div>
         </div>
       <div className="sec5-digram-wrapper">
-        <div className="diagram">
+        {/* <div className="diagram">
           <div className="diagram-cloud-provider">
             <img className="diagram-side" src="/cloud-provider.png" alt="" />
             <p>Your cloud provider</p>
@@ -34,6 +34,11 @@ const Sec5 = () => {
             <img className="diagram-side" src="/event-collector.png" alt="" />
             <p>Your event collector</p>
           </div>
+        </div> */}
+        <img src="/connectors.png" alt="" />
+        <div className='connectors-undertitle'>
+          <p>Your cloud provider</p>
+          <p>Your event collector</p>
         </div>
       </div>
       </section>

@@ -25,6 +25,7 @@ const Sec4 = () => {
           <img className="other-apps-img" src="/other-apps-in-box.png" alt="" />
           <img className="vs" src="/VS.png" alt="" />
           <img className="glazed-img"  src="/glazed-in-box.png" alt="" />
+
         </div>
         </div>
       </section>

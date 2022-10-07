@@ -35,7 +35,27 @@
   }
   .sec5-digram-wrapper {
     display: flex;
-  }
+    flex-direction: column;
+    img{
+      @media (max-width: 900px) {
+        width: 80vw;
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+      padding: 0;
+      @media (max-width: 900px) {
+        font-size: 0.7rem;
+      }
+    }
+
+    .connectors-undertitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
   .diagram {
     display: flex;
     justify-content: center;
@@ -44,27 +64,26 @@
     @media (max-width: 900px) {
       max-width: 80vw;
     }
-    .diagram-cloud-provider {
+    
+    // .diagram-cloud-provider {
       
-      display: flex;
-      flex-direction: column;
-    }
-    .diagram-center{
-      display: flex;
-      align-items: center;
-      margin-bottom: 4rem;
-    }
-    .glazed-do{
-      margin: 0 2rem 0 2rem;
-    }
-    .diagram-side{
-      margin: auto auto;
-    }
-    p {
-      margin-top: 2rem;
-      padding: 0;
-    }
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    // .diagram-center{
+    //   display: flex;
+    //   align-items: center;
+    //   margin-bottom: 4rem;
+    // }
+    // .glazed-do{
+    //   margin: 0 2rem 0 2rem;
+    // }
+    // .diagram-side{
+    //   margin: auto auto;
+    // }
+    
   }
+}
 
   @media (max-width: 900px) {
     
