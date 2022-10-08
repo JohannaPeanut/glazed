@@ -16,6 +16,13 @@
         height: 45px;
       }
     }
+
+    // hide the doughnuts on mobile
+    #do-1, #do-2, #do-3,#do-4, #do-5, #do-6{
+        @media (max-width: 900px) {
+            display: none;
+          }
+    }
     
     #do-2, #do-3,#do-4, #do-5,#do-6{
         margin-top: -40px;
@@ -42,6 +49,5 @@
     #do-6{
         z-index:5
     }
-
     
 }
