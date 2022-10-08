@@ -7,6 +7,8 @@ const CustomMailForm = ({ status, message, onValidated }) => {
 
     const [email, setEmail] = useState('');
 
+    const mailchimpAltUrl = process.env.REACT_APP_MAILCHIMP_ALT_URL
+
     const handleSubmit = (e) => {
         e.preventDefault();
         email &&
@@ -23,7 +25,7 @@ const CustomMailForm = ({ status, message, onValidated }) => {
         
         <>
         {!status && (
-            // shown when status is sending / could be replaces by spinner
+            // checks if status message is there 
             <div>
               <h3 className="mc-title">Join our free beta:</h3>
             </div>
@@ -37,7 +39,7 @@ const CustomMailForm = ({ status, message, onValidated }) => {
         {status === "error" && (
             // when the status prop equals error - pulled from the API // todo: if error message is timeout: show link to mailchimp form page
             <div>
-              <h3 className="mc-title">This didn't work. Try <a href="http://eepurl.com/iaEyQL">here</a>.</h3>
+              <h3 className="mc-title">This didn't work. Try <a href={mailchimpAltUrl}>here</a>.</h3>
             </div>
         )}
         {status === "success" && (
