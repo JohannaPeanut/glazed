@@ -3,7 +3,8 @@ import './Sec6.scss';
 
 const Sec6 = () => {
   return (
-    <div className="Sec6 sec" id="Our-vision">
+    /* Classname scroll snap for snap of every section */
+    <div className="Sec6 sec scroll-snap" id="Our-vision">
       <section className="section-padding">
         <div className="vision-container change-flex-dir">
           <div className="ul-wrapper">
@@ -31,14 +32,19 @@ const Sec6 = () => {
               </li>
             </ul>
           </div>
-
-          <div className="paragraph">
-            <p>
-              We envision a future where tracking documentation, analytics and
-              design is centralised, fully automated, 1st party, intuitive and
-              code-free.
-            </p>
-          </div>
+          <aside>
+            <div>
+              <img src="vision.png" alt="glazed vision" />
+            </div>
+            <div className="paragraph">
+              <p>
+                We envision a future where <strong>tracking </strong>
+                documentation, <strong>analytics </strong> and
+                <strong> design</strong> is centralised, fully automated, 1st
+                party, intuitive and code-free.
+              </p>
+            </div>
+          </aside>
         </div>
       </section>
     </div>

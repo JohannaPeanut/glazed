@@ -3,7 +3,11 @@ import './Sec4.scss';
 
 const Sec4 = () => {
   return (
-    <div className="Sec4 sec section-padding" id="Centralise-tracking">
+    /* Classname scroll snap for snap of every section */
+    <div
+      className="Sec4 sec section-padding scroll-snap"
+      id="Centralise-tracking"
+    >
       <section className="section-container">
         <div className="section-intro change-flex-dir">
           <div className="desktop">
@@ -29,16 +33,17 @@ const Sec4 = () => {
               <strong>No complicated spreadsheets!</strong>
             </p>
           </div>
-
         </div>
-        <div className='sec4-digram-wrapper'>
-          
-        <div className="diagram change-flex-dir ">
-          <img className="other-apps-img" src="/other-apps-in-box.png" alt="" />
-          <img className="vs" src="/VS.png" alt="" />
-          <img className="glazed-img"  src="/glazed-in-box.png" alt="" />
-
-        </div>
+        <div className="sec4-digram-wrapper">
+          <div className="diagram change-flex-dir ">
+            <img
+              className="other-apps-img"
+              src="/other-apps-in-box.png"
+              alt=""
+            />
+            <img className="vs" src="/VS.png" alt="" />
+            <img className="glazed-img" src="/glazed-in-box.png" alt="" />
+          </div>
         </div>
       </section>
     </div>

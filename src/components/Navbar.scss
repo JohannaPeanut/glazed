@@ -2,34 +2,34 @@
 @use '../styles/config/typography';
 
 .nav-bar-wrapper {
-    @media (max-width: 900px) {
-    display: none;    
+  @media (max-width: 900px) {
+    display: none;
+  }
+  .Navbar {
+    display: flex;
+    //justify-content: space-between;
+    width: 100vw;
+    flex: 0 0 100%;
+    position: fixed;
+    background-color: colors.$background;
+    z-index: 2;
+    min-height: 3rem;
+    padding-left: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin: 0.7rem;
     }
-    .Navbar{
-        display: flex;
-        //justify-content: space-between;
-        width: 100vw;
-        flex: 0 0 100%;
-        position: fixed;
-        background-color: colors.$background;
-        z-index: 2;
-        min-height: 3rem;
-        padding-left: 0.5rem;
-        a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            margin: 0.7rem
-        }
-        img {
-            width: 30px;
-           height: 30px
-        }
-        p {
-            color: colors.$text;
-            font-size: typography.$nav;
-            margin-left: 0.3rem;
-        }
+    img {
+      width: 30px;
+      height: 30px;
     }
+    p {
+      color: colors.$text;
+      font-size: typography.$nav;
+      margin-left: 0.3rem;
+    }
+  }
 }
-

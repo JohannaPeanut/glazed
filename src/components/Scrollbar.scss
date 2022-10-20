@@ -1,53 +1,61 @@
-.Scrollbar{
-    position: fixed;
-    top:6rem;
+.Scrollbar {
+  position: sticky;
+  top: 6rem;
+  @media (max-width: 900px) {
+    top: 4rem;
+  }
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 80px;
+    height: 80px;
     @media (max-width: 900px) {
-        top:4rem;
-      }
-    left: 1.5rem;
-    display: flex;
-    flex-direction: column;
+      width: 45px;
+      height: 45px;
+    }
+  }
 
-    img {
-        width: 80px;
-       height: 80px;
-       @media (max-width: 900px) {
-        width: 45px;
-        height: 45px;
-      }
+  // hide the doughnuts on mobile
+  #do-1,
+  #do-2,
+  #do-3,
+  #do-4,
+  #do-5,
+  #do-6 {
+    @media (max-width: 900px) {
+      display: none;
     }
+  }
 
-    // hide the doughnuts on mobile
-    #do-1, #do-2, #do-3,#do-4, #do-5, #do-6{
-        @media (max-width: 900px) {
-            display: none;
-          }
+  #do-2,
+  #do-3,
+  #do-4,
+  #do-5,
+  #do-6 {
+    margin-top: -40px;
+    @media (max-width: 900px) {
+      margin-top: -22px;
     }
-    
-    #do-2, #do-3,#do-4, #do-5,#do-6{
-        margin-top: -40px;
-        @media (max-width: 900px) {
-            margin-top: -22px;
-          }
-    }
+  }
 
-    #do-1{
-        z-index:10
-    }
-    #do-2{
-        z-index:9
-    }
-    #do-3{
-        z-index:8
-    }
-    #do-4{
-        z-index:7
-    }
-    #do-5{
-        z-index:6
-    }
-    #do-6{
-        z-index:5
-    }
-    
+  #do-1 {
+    z-index: 10;
+  }
+  #do-2 {
+    z-index: 9;
+  }
+  #do-3 {
+    z-index: 8;
+  }
+  #do-4 {
+    z-index: 7;
+  }
+  #do-5 {
+    z-index: 6;
+  }
+  #do-6 {
+    z-index: 5;
+  }
 }

@@ -1,0 +1,17 @@
+.dn1-sticky {
+  position: sticky;
+  top: 0;
+  left: 2rem;
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  /* float: right; */
+}
+
+.doughnut1 {
+  z-index: 10;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}

@@ -2,7 +2,6 @@
 @use '../styles/config/typography';
 
 .Sec6 {
-
   background-color: colors.$background-second;
   //padding: 7rem;
 
@@ -21,10 +20,10 @@
         align-items: center;
         justify-content: flex-start;
         margin-bottom: 2rem;
+
         @media (max-width: 900px) {
           margin-bottom: 1rem;
         }
-
       }
       img {
         width: 60px;
@@ -40,6 +39,7 @@
         padding: 2rem;
         background-color: #7c73e9;
         border-radius: 13px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         @media (max-width: 900px) {
           font-size: typography.$small-m;
           padding: 1rem;
@@ -47,23 +47,36 @@
       }
     }
   }
-  .paragraph{
+  .paragraph {
     margin-left: 4rem;
     width: 400px;
     flex-grow: 0;
+
     @media (max-width: 900px) {
       margin-top: 2rem;
       margin-bottom: 1rem;
       width: 80vw;
-      margin-left:0
+      margin-left: 0;
     }
   }
-  
+
   h1 {
     font-size: 3rem;
     font-weight: 650;
     margin: 0 0 2rem 2rem;
   }
+}
 
-  
+aside {
+  img {
+    max-width: 400px;
+    margin: 0 2rem 3rem 4rem;
+    @media (max-width: 900px) {
+      max-width: 80vw;
+      margin: 3rem auto auto 0;
+    }
+  }
+}
+.doughnut-sticky {
+  margin-left: 1rem;
 }

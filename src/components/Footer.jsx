@@ -4,9 +4,9 @@ import MailchimpFormContainer from './MailchimpFormContainer';
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer scroll-snap">
       <div className="mobile">
-          <MailchimpFormContainer />
+        <MailchimpFormContainer />
       </div>
       <h6 className="desktop">hello@glazedanalytics.com</h6>
       <div>
@@ -14,7 +14,11 @@ const Footer = () => {
         <h6>The analytics platform embedded in your product</h6>
       </div>
       <div className="footer-bottom-wrapper">
-        <img className="mobile do-img" src="/Doughnuts/doughnut_1f369.png" alt="" />
+        <img
+          className="mobile do-img"
+          src="/Doughnuts/doughnut_1f369.png"
+          alt=""
+        />
         <img className="logo-white" src="/glazed_white_v1.png" alt="" />
         <h6 className="mobile">hello@glazedanalytics.com</h6>
       </div>

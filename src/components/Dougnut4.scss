@@ -1,0 +1,16 @@
+.dn4-sticky {
+  position: sticky;
+  top: 9.3rem;
+  left: 2rem;
+  /* float: right; */
+  z-index: 3;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.doughnut4 {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 1rem;
+}

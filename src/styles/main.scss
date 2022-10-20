@@ -2,16 +2,36 @@
 @use './config/colors';
 @use './config/typography';
 
-*{
+* {
   box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
 }
 
-h1, h2, h3 {
+body {
+  overflow: hidden;
+}
+
+// makes smooth scroll when clicking the links
+.ss-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+}
+
+// makes sections snap to top when scrolled to
+/* .scroll-snap {
+  scroll-snap-align: center;
+} */
+
+h1,
+h2,
+h3 {
   font-weight: 650;
 }
 
@@ -35,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size:  typography.$h3;
+  font-size: typography.$h3;
   font-weight: 650;
   line-height: typography.$line-height-single;
   @media (max-width: 900px) {
@@ -52,8 +72,8 @@ body {
 }
 
 p {
-  max-width: 600px;
-  font-size:  typography.$p;
+  max-width: 720px;
+  font-size: typography.$p;
   @media (max-width: 900px) {
     font-size: typography.$p-m;
     max-width: 80vw;
@@ -62,7 +82,7 @@ p {
 
 .text-box {
   background-color: colors.$rose;
-  padding: 3rem 4rem;
+  padding: 1.5rem 2rem;
   border-radius: 33px;
   box-shadow: 1rem 1.5rem colors.$dark-rose;
 }
@@ -73,40 +93,39 @@ strong {
 
 .sec {
   height: fit-content;
-  min-height: 100vh;
-  
+  //min-height: 100vh;
 }
 
 .vs {
   width: 5rem;
 }
 
-.section-padding{
-  padding: 100px ;
+.section-padding {
+  padding: 100px;
   @media (max-width: 900px) {
     padding: 2rem 1rem;
   }
 }
 
-.section-container{
+.section-container {
   width: 80vw;
-  max-width: 1200px
+  max-width: 1200px;
 }
 
 .change-flex-dir {
   @media (max-width: 900px) {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .mobile {
   @media (min-width: 901px) {
     display: none;
-    }
+  }
 }
 
 .desktop {
   @media (max-width: 901px) {
     display: none;
-    }
+  }
 }

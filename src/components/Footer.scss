@@ -1,46 +1,46 @@
 @use '../styles/config/typography';
 @use '../styles/config/colors';
 
-.footer{
-    color: colors.$text-on-background-high;
-    background-color: colors.$background-footer;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 2rem;
+.footer {
+  color: colors.$text-on-background-high;
+  background-color: colors.$background-footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+
+  @media (max-width: 900px) {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h6 {
+    font-weight: 400;
+    font-size: typography.$nav;
+  }
+
+  .mountain {
+    width: 500px;
+    margin-bottom: 0.3rem;
     @media (max-width: 900px) {
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    h6{
-        font-weight: 400;
-        font-size: typography.$nav;
-       
+      width: 80vw;
     }
+  }
 
-    .mountain{
-        width: 500px;
-        margin-bottom: 0.3rem;
-        @media (max-width: 900px) {
-            width: 80vw;
-          }
+  .footer-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .do-img {
+      width: 80px;
     }
-
-    .footer-bottom-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .do-img{
-            width: 80px;
-        }
-        .logo-white{
-            margin-top: 1rem;;
-            width: 130px;
-        }
-        h6{
-            margin-top: 1rem;;
-        }
+    .logo-white {
+      margin-top: 1rem;
+      width: 130px;
     }
+    h6 {
+      margin-top: 1rem;
+    }
+  }
 }
