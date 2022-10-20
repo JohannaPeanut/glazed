@@ -4,7 +4,7 @@ import './Sec2.scss';
 const Sec2 = () => {
   return (
     /* Classname scroll snap for snap of every section */
-    <div className="Sec2 sec scroll-snap" id="Design-driven">
+    <div className="Sec2 sec scroll-snap" id="Data-driven">
       <section className="change-flex-dir">
         <div className="wireframe">
           <img src="data-driven-1.png" alt="" />

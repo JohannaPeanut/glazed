@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import './Navbar.scss'
+import './Navbar.scss';
 
 const Navbar = () => {
-
-  const [isExpand, setIsExpand] = useState(false)
+  const [isExpand, setIsExpand] = useState(false);
 
   const closeMenu = () => {
     setIsExpand(false);
@@ -17,40 +16,42 @@ const Navbar = () => {
 
   return (
     <div className="nav-bar-wrapper">
-      {isExpand ? 
-      <div className="toggle Navbar">
-        <img src="/Doughnuts/doughnut_1f369.png" alt="" />
-      </div> :
-      <div className="Navbar">
-        <a href="#Top">
+      {isExpand ? (
+        <div className="toggle Navbar">
           <img src="/Doughnuts/doughnut_1f369.png" alt="" />
-          <p>Top</p>
-        </a>
-        <a href="#Design-driven">
-          <img src="/Doughnuts/doughnut_1f369_11.png" alt="" />
-          <p>Design-driven</p>
+        </div>
+      ) : (
+        <div className="Navbar">
+          <a href="#Top">
+            <img src="/Doughnuts/doughnut_1f369.png" alt="" />
+            <p>
+              <span class="material-symbols-sharp">north</span>
+            </p>
           </a>
-        <a href="#Democratise-data">
-          <img src="/Doughnuts/doughnut_1f369_7.png" alt="" />
-          <p>Democratise data</p>
+          <a href="#Data-driven">
+            <img src="/Doughnuts/doughnut_1f369_11.png" alt="" />
+            <p>Data-driven</p>
           </a>
-        <a href="#Centralise-tracking">
-          <img src="/Doughnuts/doughnut_1f369_9.png" alt="" />
-          <p>Centralise tracking</p>
+          <a href="#Democratise-data">
+            <img src="/Doughnuts/doughnut_1f369_7.png" alt="" />
+            <p>Democratise data</p>
           </a>
-        <a href="#Own-your-data">
-          <img src="/Doughnuts/doughnut_1f369_8.png" alt="" />
-          <p>Own your data</p>
+          <a href="#Centralise-tracking">
+            <img src="/Doughnuts/doughnut_1f369_9.png" alt="" />
+            <p>Centralise tracking</p>
           </a>
-        <a href="#Our-vision">
-          <img src="/Doughnuts/doughnut_1f369_2.png" alt="" />
-          <p>Our vision</p>
+          <a href="#Own-your-data">
+            <img src="/Doughnuts/doughnut_1f369_8.png" alt="" />
+            <p>Own your data</p>
           </a>
-        {/* Mailchimp Component */}
-      </div>
-}
+          <a href="#Our-vision">
+            <img src="/Doughnuts/doughnut_1f369_2.png" alt="" />
+            <p>Our vision</p>
+          </a>
+          {/* Mailchimp Component */}
+        </div>
+      )}
     </div>
-    
   );
 };
 

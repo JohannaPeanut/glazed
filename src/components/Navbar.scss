@@ -7,7 +7,7 @@
   }
   .Navbar {
     display: flex;
-    //justify-content: space-between;
+    justify-content: center;
     width: 100vw;
     flex: 0 0 100%;
     position: fixed;
@@ -30,6 +30,7 @@
       color: colors.$text;
       font-size: typography.$nav;
       margin-left: 0.3rem;
+      margin-right: 2rem;
     }
   }
 }

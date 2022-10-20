@@ -8,7 +8,7 @@
 
 .sticky {
   position: sticky;
-  margin-top: 10rem;
+  margin-top: 8rem;
   top: 4rem;
   right: 2rem;
   float: right;
@@ -17,6 +17,7 @@
 
 .mc-form-container {
   /* position: -webkit-sticky;  Safari */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
   z-index: 3;
   width: 20rem;

@@ -3,6 +3,9 @@
 
 .Sec3 {
   display: flex;
+  @media (max-width: 900px) {
+    padding-bottom: 0;
+  }
 
   section {
     display: flex;
@@ -23,7 +26,7 @@
 
     @media (max-width: 900px) {
       margin-left: 0;
-      padding: 4rem 0 2rem 0;
+      padding: 4rem 0 0 0;
     }
   }
 
@@ -39,7 +42,6 @@
   }
 
   .diagram-wrapper {
-    /* padding-top: 3rem; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -51,6 +53,10 @@
   .diagram {
     margin-top: 4rem;
     //margin: 3rem 1rem 3rem 4rem;
+    @media (max-width: 900px) {
+      margin-top: 2rem;
+    }
+
     img {
       height: 9rem;
       width: 50vw;
