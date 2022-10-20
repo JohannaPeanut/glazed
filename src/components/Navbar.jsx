@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="#Top">
             <img src="/Doughnuts/doughnut_1f369.png" alt="" />
             <p>
-              <span class="material-symbols-sharp">north</span>
+              <span className="material-symbols-sharp">north</span>
             </p>
           </a>
           <a href="#Data-driven">

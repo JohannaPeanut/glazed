@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import './MailchimpFormContainer.scss';
 
@@ -27,40 +27,42 @@ const CustomMailForm = ({ status, message, onValidated }) => {
   return (
     <form className="mc-form" onSubmit={(e) => handleSubmit(e)}>
       <>
-        {!status && (
+        {!status ? (
           // checks if status message is there
           <div>
             <h3 className="mc-title">Join our free beta:</h3>
           </div>
-        )}
-        {status === 'sending' && !delayed && (
-          // shown when status is sending / could be replaces by spinner
-          <div>
-            <h3 className="mc-title">Sending...</h3>
-          </div>
-        )}
-        {status !== 'success' && delayed && (
-          // when the status prop is not success after 5 seconds (delayed === true) - pulled from the API // todo: if error message is timeout: show link to mailchimp form page
-          <div>
-            <h3 className="mc-title">
-              This didn't work. Try{' '}
-              <a
-                href={mailchimpAltUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here
-              </a>
-              .
-            </h3>
-          </div>
-        )}
-        {status === 'success' && (
-          //when the status prop equals success - also pulled from the API and is set up based on react-mailchimp-subscribe's example
-          <div>
-            <h3 className="mc-title"> Thanks for joining!</h3>
-          </div>
-        )}
+        ) : (
+          status === 'success' ? (
+            //when the status prop equals success - also pulled from the API and is set up based on react-mailchimp-subscribe's example
+            <div>
+              <h3 className="mc-title"> Thanks for joining!</h3>
+            </div>
+          ) : (
+            !delayed ? (
+              // shown when status is sending / could be replaces by spinner
+              <div>
+                <h3 className="mc-title">Sending...</h3>
+              </div>
+            ) : (
+              // in case no success after 5 seconds
+              <div> 
+              <h3 className="mc-title">
+                This didn't work. Try{' '}
+                <a
+                  href={mailchimpAltUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here
+                </a>
+                .
+              </h3>
+            </div>
+            )
+          )
+        )
+      }        
       </>
 
       <div className="mc-field-container">
