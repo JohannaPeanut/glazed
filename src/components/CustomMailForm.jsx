@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import './MailchimpFormContainer.scss';
 
 const CustomMailForm = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
+  const [delayed, setDelayed] = useState(false);
 
   const mailchimpAltUrl = process.env.REACT_APP_MAILCHIMP_ALT_URL;
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // delayed is set to true after 5 sec
+    setTimeout(() => {
+      setDelayed(true);
+    }, 5000);
+
     email &&
       email.indexOf('@') > -1 &&
       onValidated({
@@ -26,17 +33,25 @@ const CustomMailForm = ({ status, message, onValidated }) => {
             <h3 className="mc-title">Join our free beta:</h3>
           </div>
         )}
-        {status === 'sending' && (
+        {status === 'sending' && !delayed && (
           // shown when status is sending / could be replaces by spinner
           <div>
             <h3 className="mc-title">Sending...</h3>
           </div>
         )}
-        {status === 'error' && (
-          // when the status prop equals error - pulled from the API // todo: if error message is timeout: show link to mailchimp form page
+        {status !== 'success' && delayed && (
+          // when the status prop is not success after 5 seconds (delayed === true) - pulled from the API // todo: if error message is timeout: show link to mailchimp form page
           <div>
             <h3 className="mc-title">
-              This didn't work. Try <a href={mailchimpAltUrl}>here</a>.
+              This didn't work. Try{' '}
+              <a
+                href={mailchimpAltUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              .
             </h3>
           </div>
         )}
