@@ -10,7 +10,7 @@ const CustomMailForm = ({ status, message, onValidated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setDelayed(false)
     // delayed is set to true after 5 sec
     setTimeout(() => {
       setDelayed(true);
