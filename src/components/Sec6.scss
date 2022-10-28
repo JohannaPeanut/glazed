@@ -2,8 +2,10 @@
 @use '../styles/config/typography';
 
 .Sec6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: colors.$background-second;
-  //padding: 7rem;
 
   .vision-container {
     display: flex;

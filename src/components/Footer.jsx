@@ -4,7 +4,7 @@ import MailchimpFormContainer from './MailchimpFormContainer';
 
 const Footer = () => {
   return (
-    <div className="footer scroll-snap">
+    <div className="footer">
       <div className="mobile">
         <MailchimpFormContainer />
       </div>

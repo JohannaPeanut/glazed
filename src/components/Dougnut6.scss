@@ -2,7 +2,6 @@
   position: sticky;
   top: 16.2rem;
   left: 2rem;
-  /* float: right; */
   z-index: 3;
   @media (max-width: 900px) {
     display: none;
@@ -13,4 +12,7 @@
   position: absolute;
   margin-top: 6rem;
   margin-left: 1rem;
+  @media (max-width: 1178px) {
+    margin-top: 7rem;
+  }
 }

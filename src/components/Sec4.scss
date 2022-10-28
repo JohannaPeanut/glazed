@@ -19,7 +19,7 @@
     // margin: 8rem 20rem 0 20rem;
 
     .section-header {
-      display: flex;
+      // display: flex;
       margin-left: 4rem;
       box-shadow: 1rem 1.5rem #ffde74;
       width: 400px;
@@ -39,23 +39,29 @@
     }
   }
 
-  .sec4-digram-wrapper {
+  /*  .sec4-digram-wrapper {
     display: flex;
-  }
+    justify-content: flex-start;
+  } */
 
   .diagram {
     @media (max-width: 900px) {
       width: 80vw;
       padding-bottom: 1rem;
     }
-    .other-apps-img {
+
+    .process-desk {
+      max-width: 70%;
+
       @media (max-width: 900px) {
-        width: 80vw;
+        display: none;
       }
     }
-    .glazed-img {
-      @media (max-width: 900px) {
-        width: 70px;
+
+    .process-mobile {
+      max-width: 80vw;
+      @media (min-width: 901px) {
+        display: none;
       }
     }
 
@@ -63,12 +69,6 @@
     @media (max-width: 900px) {
       margin-top: 2rem;
     }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .vs {
-    margin: 1.5rem;
   }
 }
 .doughnut-sticky {

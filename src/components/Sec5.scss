@@ -20,7 +20,7 @@
   }
 
   p {
-    padding: 4rem;
+    padding: 0 0 0 4rem;
     @media (max-width: 900px) {
       margin-left: 0;
       padding: 4rem 0 0 0;
@@ -61,7 +61,7 @@
       }
     }
 
-    .connectors-undertitle {
+    .connectors-subtitle {
       width: 650px;
       @media (max-width: 900px) {
         width: 80vw;

@@ -3,11 +3,7 @@ import './Sec4.scss';
 
 const Sec4 = () => {
   return (
-    /* Classname scroll snap for snap of every section */
-    <div
-      className="Sec4 sec section-padding scroll-snap"
-      id="Centralise-tracking"
-    >
+    <div className="Sec4 sec section-padding" id="Centralise-tracking">
       <section className="section-container">
         <div className="section-intro change-flex-dir">
           <div className="desktop">
@@ -37,12 +33,15 @@ const Sec4 = () => {
         <div className="sec4-digram-wrapper">
           <div className="diagram change-flex-dir ">
             <img
-              className="other-apps-img"
-              src="/other-apps-in-box.png"
-              alt=""
+              className="process-desk"
+              src="centralise-screen.png"
+              alt="Analytics with complicated spreadsheats vs. glazed: centralised tracking, single source of truth, easy to us"
             />
-            <img className="vs" src="/VS.png" alt="" />
-            <img className="glazed-img" src="/glazed-in-box.png" alt="" />
+            <img
+              className="process-mobile"
+              src="centralise-mobile.png"
+              alt="Analytics with complicated spreadsheats vs. glazed: centralised tracking, single source of truth, easy to us"
+            />
           </div>
         </div>
       </section>

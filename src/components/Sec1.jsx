@@ -4,11 +4,10 @@ import './Sec1.scss';
 
 const Sec1 = () => {
   return (
-    /* Classname scroll snap for snap of every section */
-    <div className="Sec1 sec scroll-snap" id="Top">
+    <div className="Sec1 sec" id="Top">
       <section>
         <div className="main-logo">
-          <img src="/Logo.png" alt="" />
+          <img src="/Logo.png" alt="Glazed Product Analytics Platform - Logo" />
         </div>
         <div>
           <div className="claim text-box">

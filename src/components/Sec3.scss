@@ -13,9 +13,6 @@
     margin: auto auto;
   }
   .section-intro {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // margin: 8rem 20rem 0 20rem;
     display: flex;
     align-items: flex-start;
   }
@@ -38,7 +35,6 @@
       width: 300px;
       margin-bottom: 1rem;
     }
-    //align-self: center;
   }
 
   .diagram-wrapper {
@@ -52,7 +48,6 @@
   }
   .diagram {
     margin-top: 4rem;
-    //margin: 3rem 1rem 3rem 4rem;
     @media (max-width: 900px) {
       margin-top: 2rem;
     }
@@ -61,10 +56,9 @@
       height: 9rem;
       width: 50vw;
       height: auto;
-      //padding-left: 16rem;
       @media (max-width: 900px) {
-        min-width: 80vw;
-        height: 70%;
+        width: 100%;
+
         padding-bottom: 1rem;
       }
     }
@@ -73,14 +67,12 @@
         display: none;
       }
     }
-
     .process-mobile {
       @media (min-width: 901px) {
         display: none;
       }
     }
   }
-
   .vs {
     margin: 1rem auto 1rem 9rem;
     @media (max-width: 901px) {

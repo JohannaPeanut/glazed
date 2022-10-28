@@ -16,18 +16,12 @@ body {
 }
 
 // makes smooth scroll when clicking the links
-.ss-container {
-  height: 100vh;
+.smooth-scroll-container {
+  height: 100%;
   width: 100%;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
 }
-
-// makes sections snap to top when scrolled to
-/* .scroll-snap {
-  scroll-snap-align: center;
-} */
 
 h1,
 h2,
@@ -93,7 +87,7 @@ strong {
 
 .sec {
   height: fit-content;
-  //min-height: 100vh;
+  min-height: 100vh;
 }
 
 .vs {

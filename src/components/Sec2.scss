@@ -2,14 +2,18 @@
 @use '../styles/config/typography';
 
 .Sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: colors.$background-second;
 
   @media (max-width: 900px) {
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
-  background-color: colors.$background-second;
   section {
     display: flex;
     justify-content: space-evenly;
