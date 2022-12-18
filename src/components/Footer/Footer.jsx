@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import MailchimpFormContainer from './MailchimpFormContainer';
+import MailchimpFormContainer from '../SubscriptionForm/MailchimpFormContainer';
 
 const Footer = () => {
   return (

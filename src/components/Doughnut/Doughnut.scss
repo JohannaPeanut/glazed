@@ -1,3 +1,7 @@
+// dn-sticky classes: media query 900px --> no doughnuts on small screens
+// doughnut classes: media query 1178px --> doughnut pile with larger margin top, messy solution for navbar width change on medium screens
+// TODO: refactor classes
+
 .dn1-sticky {
     margin-top: 2.4rem;
     position: sticky;

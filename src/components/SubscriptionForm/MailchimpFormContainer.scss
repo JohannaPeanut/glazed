@@ -1,5 +1,5 @@
-@use '../styles/config/typography';
-@use '../styles/config/colors';
+@use '../../styles/config/typography';
+@use '../../styles/config/colors';
 
 .sticky-container {
   position: absolute;
@@ -21,7 +21,6 @@
 
 .mc-form-container {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
   z-index: 3;
   width: 20rem;
   padding: 1rem 1.5rem;
@@ -49,6 +48,9 @@
         border-radius: 33px;
         font-size: 1rem;
       }
+      input:focus {
+        outline: none;
+      }
       ::placeholder {
         color: colors.$background;
         @media (max-width: 900px) {
@@ -72,6 +74,7 @@
           color: colors.$text;
         }
       }
+      //TODO: hover on button - for not-mobile
       .btn {
         margin-left: 0.5rem;
         background-color: white;

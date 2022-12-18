@@ -1,5 +1,5 @@
-@use '../styles/config/colors';
-@use '../styles/config/typography';
+@use '../../styles/config/colors';
+@use '../../styles/config/typography';
 
 .nav-bar-wrapper {
   @media (max-width: 900px) {

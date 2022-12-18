@@ -3,7 +3,7 @@ import React from 'react';
 import './Doughnut.scss';
 
 const Doughnut = ({ doughnut }) => {
-  const { id, src} = doughnut
+  const { id, src } = doughnut
   return (
     <div id="dn-scroll" className={`dn${id}-sticky`}>
       <img

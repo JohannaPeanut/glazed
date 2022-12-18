@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import MailchimpFormContainer from './MailchimpFormContainer';
+import MailchimpFormContainer from '../SubscriptionForm/MailchimpFormContainer';
 import './Sec1.scss';
 
 const Sec1 = () => {
@@ -44,3 +43,5 @@ const Sec1 = () => {
 };
 
 export default Sec1;
+
+//TODO: refactor section components - more generic components

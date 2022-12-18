@@ -87,3 +87,7 @@ const CustomMailForm = ({ status, message, onValidated }) => {
 };
 
 export default CustomMailForm;
+
+//TODO: As far as I know, this subscrition method does not comply with the DGSVO --> maybe add agreeing option
+//TODO: CAPTCHA against spamming
+//TODO: messy solution for browsers with security add ons (see "this did not work" --> link to external mail form)
